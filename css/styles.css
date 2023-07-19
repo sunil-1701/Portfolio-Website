@@ -26,10 +26,12 @@ h3 {
   font-family: 'Montserrat', sans-serif;
 }
 
-h4 {
-  font-size: 1.75em;
-  color: #11999E;
+p {
+  color: #40514E;
   font-family: 'Montserrat', sans-serif;
+}
+.footer>p{
+  color: #EAF6F6;
 }
 
 p {
@@ -37,64 +39,105 @@ p {
 }
 
 hr {
-  border: dotted #EAF6F6 6px;
+  border: dotted #11999E 7px;
+  opacity: 40%;
   border-bottom: none;
-  width: 4%;
-  margin: 100px auto;
+  width: 7%;
+  margin: 60px auto;
 }
 
 a {
-  color: #11999E;
+  color: #EAF6F6;
   font-family: 'Montserrat', sans-serif;
   margin: 10px 20px;
   text-decoration: none;
 }
 
 a:hover {
-  color: #EAF6F6;
+  font-weight: 1000;
+  color: #6699ff;
 }
 
-.top-container {
+.hello {
   background-color: #E4F9F5;
   position: relative;
-  padding-top: 100px;
+  padding-top: 75px;
 }
 
-.middle-container {
+.hov:hover{
+  font-weight: bold;
+  color: #E9B384;
+}
+
+.about-me .skills .projects{
   margin: 100px 0;
 }
 
-.bottom-container {
+.interest {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap:15px;
+  justify-content: center;
+  align-content: center;
+}
+.interests{
+  padding-bottom: 50px;
+}
+
+.footer {
   background-color: #66BFBF;
   padding: 50px 0 20px;
 }
 
-.skill-row {
-  width: 50%;
-  margin: 100px auto 100px auto;
-  text-align: left;
-}
-
-.box {
-  text-align: center;
-  width: 250px;
-  height: 40px;
-  display: inline-block;
-  background-color: #66BFBF;
-  padding: 15px;
-  margin: 5px;
+.hello>.welcome-sticker {
+  height: 250px;
 }
 
 .pro {
   text-decoration: underline;
 }
 
-.intro {
-  width: 60%;
-  margin: auto;
+
+.about-me>.profile{
+  display:grid;
+  grid-template-columns:3fr 1fr;
+  gap:15px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+
 }
 
-.contact-message {
-  width: 40%;
-  margin: 40px auto 60px;
+.profile>.about-image{
+  height:200px;
+}
+
+.skills>ul{
+  display: inline-grid;
+  grid-template-columns: repeat(3,minmax(100px,250px));
+  grid-template-rows: repeat(2,80px);
+  gap: 15px;
+
+}
+.skills>ul>li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #66BFBF;
+  border-radius: 60%;
+  color: #E4F9F5;
+
+}
+
+.projects>ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(100px,250px));
+  gap: 15px;
+  justify-content: center;
+}
+.project-preview {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-content: center;
 }
