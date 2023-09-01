@@ -73,16 +73,7 @@ a:hover {
   margin: 100px 0;
 }
 
-.interest {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap:15px;
-  justify-content: center;
-  align-content: center;
-}
-.interests{
-  padding-bottom: 50px;
-}
+
 
 .footer {
   background-color: #66BFBF;
@@ -114,30 +105,74 @@ a:hover {
 
 .skills>ul{
   display: inline-grid;
-  grid-template-columns: repeat(3,minmax(100px,250px));
-  grid-template-rows: repeat(2,80px);
-  gap: 15px;
+  grid-template-columns: repeat(2,minmax(100px,600px));
+  grid-template-rows: repeat(4,80px);
+  gap: 5px;
 
 }
 .skills>ul>li {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  background-color: #66BFBF;
-  border-radius: 60%;
-  color: #E4F9F5;
+  color: #66BFBF;
 
 }
 
 .projects>ul {
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(100px,250px));
-  gap: 15px;
-  justify-content: center;
+  gap: 5px;
+  justify-content:center;
 }
 .project-preview {
   display: flex;
   height: 100px;
   justify-content: center;
   align-content: center;
+}
+
+.container {
+  display: flex;
+  width: 60%;
+  background-color: #ddd;
+  margin-left: 10px;
+}
+
+.skill-bar {
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.py{
+  width:80%;
+  background-color: #30A2FF;
+}
+.ml{
+  width:40%;
+  background-color: #94B3FD;
+}
+.cpp{
+  width:80%;
+  background-color: #00C4FF;
+}
+.dsa{
+  width:70%;
+  background-color: #CECE5A;
+}
+.html{
+  width:90%;
+  background-color: #F8DE22;
+}
+.css{
+  width:90%;
+  background-color: #FFC436;
+}
+.js{
+  width:80%;
+  background-color: #F0DE36;
+}
+.sql{
+  width:90%;
+  background-color: #FFE17B;
 }
